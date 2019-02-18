@@ -23,7 +23,6 @@ This wasn't always true. You may have heard that trading in MT5 is restrictively
 While the broker does need to enable this mode, it is pretty easy to find brokers who use it. Hedging should be the de facto mode, going forward.
 
 ## 3. MT5 is better than MT4
-
 Besides being visually similar, MT5 is more stable than MT4 and has both under-the-hood improvements and new features. 
 
 In terms of user-facing features, a lot of thought was put in how to re-organize certain features. For instance:
@@ -68,4 +67,4 @@ For more details on a certain topic, you can view these links:
 * [MQL4 to MQL5 Equivalency Tables](https://www.mql5.com/en/articles/81) - Contains a table of MQL4 and MQL5 method and constant equivalents -- thorough but missing certain areas like Orders
 * [MQL5 Docs - Moving from MQL4 to MQL5](https://www.mql5.com/en/docs/migration) - A brief discussion on porting considerations
 
-View the menu on top of the page to learn about MQL4 and MQL5 differences.
+Next, [view this page to learn about MQL4 and MQL5 differences](https://github.com/mazmazz/Mql4ToMql5/blob/master/General%20differences.md).

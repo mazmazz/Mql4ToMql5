@@ -2,7 +2,9 @@
 
 This guide will teach you how to port your MQL4 code so that it works in both MT4 and MT5. The goal is to allow you to use the same codebase for both versions and cross-compile between the two.
 
-*Please contribute to this guide! If something is missing, please submit an issue.*
+## Page Navigation
+
+* [General differences between MQL4 and MQL5](https://github.com/mazmazz/Mql4ToMql5/blob/master/General%20differences.md) 
 
 # Why port your project to MQL5?
 
@@ -58,22 +60,6 @@ For cases where the MQL5 logic must be different, you can use the preprocessor d
 ## 2. OOP is not required
 
 It's a myth that MQL5 programs must be structured in an object-oriented format. While OOP is good practice in general, MQL5 works just fine by solely using the event calls `OnStart`, `OnTimer`, `OnTick`, `OnCalculate`, etc. They even work the same as the old MQL4 equivalents like `start`, `init`, etc. -- just a few different namings and arguments. And you can use top-level functions and global variables as much as you like -- just like the typical MQL4 program.
-
-# Your toolbox
-
-The below sources enable increased equivalency between MQL4 and MQL5 and you can `#include` into in your codebase. Copy-paste the `src/Include` files into your `MQL4` or `MQL5` folder, and use in your project like so:
-
-If you want to use all sources, insert this line into your code:
-
-  #include <Mql4ToMql5/Mql4ToMql5.mqh>
-
-Or you can include the below sources individually:
-
-* `Mql4ToMql5/Shim.mqh` - MQL4 methods and constants that are missing from MQL5. The call names can remain unchanged in your current code.
-* `Mql4ToMql5/Utility.mqh` - General utility methods and classes to share between MQL4 and MQL5. These must replace the relevant areas in your current code.
-* `Mql4ToMql5/Chart.mqh` - Chart object utility methods, same as above
-* `Mql4ToMql5/Bar.mqh` - OHLCV bar and Indicator data access utility methods, same as above
-* `Mql4ToMql5/Order.mqh` - Order utility methods, same as above
 
 ## Websites
 
